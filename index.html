@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./style/swiper.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <title>alcap-vsedliasporta</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__top">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#">О магазине</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Оплата и доставка</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Возврат и обмен</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Блог</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="actions">
+          <div class="actions__item actions__item--geo">Москва</div>
+          <div class="actions__item actions__item--cabinet">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#FEB703">
+              <title />
+              <g id="about">
+                <path d="M16,16A7,7,0,1,0,9,9,7,7,0,0,0,16,16ZM16,4a5,5,0,1,1-5,5A5,5,0,0,1,16,4Z" />
+                <path
+                  d="M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z" />
+              </g>
+            </svg>
+            Вход/Регистрация
+          </div>
+        </div>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a href="#" class="">
+              <?xml version="1.0" ?><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #4489c8;
+                    }
+
+                    .cls-2 {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <title />
+                <g data-name="32-vk" id="_32-vk">
+                  <rect class="cls-1" height="64" rx="11.2" ry="11.2" width="64" />
+                  <path class="cls-2"
+                    d="M9.62,19.77H17.3a.79.79,0,0,1,.74.51c.85,2.19,4.38,10.76,7.61,11.46,2.4,0,1.55-11.4-1.5-11.4-.8,0,1.42-1.42,1.57-1.48a16.38,16.38,0,0,1,8.66,0c1.53.64,1.79,2.43,1.83,3.95s-1.7,8,.59,8.7c3,.92,6.86-8.49,7.76-10.8a.79.79,0,0,1,.74-.5h8.55a.8.8,0,0,1,.74,1.11,74.74,74.74,0,0,1-6.31,11.52,1.59,1.59,0,0,0,.16,2C51,37.58,58,45.34,54,45.34H45.37a1.57,1.57,0,0,1-1.18-.53c-1.34-1.48-5.24-5.6-7-5.27-1.46.27-1.6,2.75-1.53,4.37a1.6,1.6,0,0,1-1.48,1.68c-1.53.09-3.62.13-3.81.12-6.1-.39-9.71-4.46-13.16-9A56.33,56.33,0,0,1,8.86,20.83.81.81,0,0,1,9.62,19.77Z" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-label="Telegram" role="img" viewBox="0 0 512 512">
+                <rect width="512" height="512" rx="15%" fill="#37aee2" />
+                <path fill="#c8daea" d="M199 404c-11 0-10-4-13-14l-32-105 245-144" />
+                <path fill="#a9c9dd" d="M199 404c7 0 11-4 16-8l45-43-56-34" />
+                <path fill="#f6fbfe"
+                  d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="">
+              <img src="./images/ok.png" alt="ok">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="header__bottom">
+        <a class="logo-link" href="#">
+          <img alt="logo-link__img" src="./images/logo.png">
+        </a>
+        <form class="form" action="">
+          <input class="input-reset from__input" type="text" placeholder="Поиск товара">
+          <button class="btn-reset from__button">Искать</button>
+        </form>
+        <div class="contact">
+          <a href="tel:+78007074465" class="contact__phone">8-(800)-707-44-65</a>
+          <button class="btn-reset contact__btn">Заказть обратный звонок</button>
+          <a href="mailto:info@alcap.ru" class="contact__phone">info@alcap.ru</a>
+        </div>
+        <div class="informer">
+          <a class="favorite header__favorite" href="#">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a class="cart" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
+              <path
+                d="M5.50835165,12.5914912 C5.5072855,12.5857255 5.50631828,12.5799252 5.5054518,12.5740921 L4.28533671,5.25340152 C4.16478972,4.53011956 3.53900455,4 2.80574582,4 L2.5,4 C2.22385763,4 2,3.77614237 2,3.5 C2,3.22385763 2.22385763,3 2.5,3 L2.80574582,3 C3.99756372,3 5.0190253,3.84029234 5.25525588,5 L21.5,5 C21.8321894,5 22.0720214,5.31795246 21.980762,5.63736056 L19.980762,12.6373606 C19.9194332,12.8520113 19.7232402,13 19.5,13 L6.59023021,13 L6.71466329,13.7465985 C6.83521028,14.4698804 7.46099545,15 8.19425418,15 L19.5,15 C19.7761424,15 20,15.2238576 20,15.5 C20,15.7761424 19.7761424,16 19.5,16 L8.19425418,16 C6.97215629,16 5.92918102,15.1164674 5.72826937,13.9109975 L5.5083519,12.5914927 L5.50835165,12.5914912 Z M5.42356354,6 L6.42356354,12 L19.1228493,12 L20.837135,6 L5.42356354,6 Z M8,21 C6.8954305,21 6,20.1045695 6,19 C6,17.8954305 6.8954305,17 8,17 C9.1045695,17 10,17.8954305 10,19 C10,20.1045695 9.1045695,21 8,21 Z M8,20 C8.55228475,20 9,19.5522847 9,19 C9,18.4477153 8.55228475,18 8,18 C7.44771525,18 7,18.4477153 7,19 C7,19.5522847 7.44771525,20 8,20 Z M17,21 C15.8954305,21 15,20.1045695 15,19 C15,17.8954305 15.8954305,17 17,17 C18.1045695,17 19,17.8954305 19,19 C19,20.1045695 18.1045695,21 17,21 Z M17,20 C17.5522847,20 18,19.5522847 18,19 C18,18.4477153 17.5522847,18 17,18 C16.4477153,18 16,18.4477153 16,19 C16,19.5522847 16.4477153,20 17,20 Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <!-- Slider main container -->
+      <div class="swiper hero__swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide swiper-slide__one">
+            <div class="container hero__container">
+              <div class="hero__content">
+                <h2 class="hero__title">Более 15 000 наименований товаров</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide__one">
+            <div class="container hero__container">
+              <div class="hero__content">
+                <h2 class="hero__title">Более 15 000 наименований товаров</h2>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide swiper-slide__one">
+            <div class="container hero__container">
+              <div class="hero__content">
+                <h2 class="hero__title">Более 15 000 наименований товаров</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev">
+          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+            xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+            <path
+              d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z" />
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+            xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+            <path
+              d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z" />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="stage">
+      <div class="container">
+        <ul class="stage__list">
+          <li class="stage__item">
+            <svg width="39" height="41" viewBox="0 0 39 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M38.991 20.677C38.991 23.26 39.016 25.8431 38.9827 28.4261C38.9577 30.6526 37.8931 32.3165 35.7971 33.3228C31.2307 35.5175 26.656 37.6806 22.0813 39.8596C20.3595 40.6836 18.6294 40.6836 16.9077 39.8675C12.308 37.6806 7.70837 35.5096 3.12535 33.2911C1.07921 32.3006 0.0311927 30.6446 0.022875 28.4736C-0.0103955 23.2838 -0.00208093 18.086 0.0145543 12.8962C0.022872 10.638 1.09585 8.97413 3.23348 7.95201C7.77491 5.781 12.3247 3.61791 16.8744 1.45482C18.6378 0.614943 20.4011 0.622866 22.1644 1.47067C26.7225 3.64961 31.2889 5.80477 35.8386 7.99163C37.9014 8.98206 38.9577 10.6222 38.9827 12.817C39.016 15.4317 38.991 18.0544 38.991 20.677ZM3.55787 13.2528C3.55787 13.4667 3.55787 13.6093 3.55787 13.7519C3.55787 18.6645 3.57451 23.5849 3.54124 28.4974C3.53292 29.3769 3.88226 29.9078 4.70571 30.296C8.90611 32.2689 13.0899 34.2736 17.2737 36.2703C17.4067 36.3336 17.5398 36.3812 17.7311 36.4604C17.7311 36.2782 17.7311 36.1514 17.7311 36.0246C17.7311 30.819 17.7311 25.6133 17.7394 20.4076C17.7394 20.0827 17.623 19.9243 17.3236 19.7817C12.8736 17.674 8.42369 15.5506 3.98207 13.435C3.86562 13.3875 3.74086 13.3399 3.55787 13.2528ZM21.2661 36.4604C21.4574 36.3812 21.5822 36.3336 21.707 36.2703C25.924 34.2656 30.1327 32.2452 34.3498 30.2564C35.1316 29.8919 35.456 29.369 35.456 28.5449C35.4394 23.5849 35.4477 18.6328 35.4477 13.6727C35.4477 13.5459 35.4394 13.4271 35.4311 13.2607C35.2647 13.332 35.14 13.3875 35.0235 13.4429C30.5736 15.5585 26.1319 17.682 21.6737 19.7975C21.3743 19.9401 21.2661 20.0986 21.2661 20.4235C21.2744 25.6212 21.2744 30.811 21.2744 36.0088C21.2661 36.1356 21.2661 36.2703 21.2661 36.4604ZM5.787 10.5033C5.90345 10.5747 5.94504 10.6064 5.98662 10.6222C10.4116 12.7298 14.8283 14.8375 19.2616 16.9292C19.4113 17.0005 19.6691 16.9688 19.8272 16.8975C21.1913 16.2637 22.547 15.606 23.9028 14.9642C24.0442 14.9008 24.1856 14.8295 24.327 14.7582C24.2771 14.7028 24.2605 14.679 24.2355 14.6711C19.7773 12.5476 15.319 10.4162 10.8608 8.30064C10.7526 8.2531 10.578 8.23726 10.4782 8.2848C8.93107 8.9979 7.3923 9.73478 5.787 10.5033ZM14.6453 6.2881C14.7534 6.35149 14.82 6.39903 14.8948 6.43072C19.2865 8.5225 23.6866 10.6222 28.0866 12.7061C28.2363 12.7774 28.4942 12.7694 28.6522 12.6902C30.0828 12.0326 31.4968 11.3432 32.9191 10.6697C33.0023 10.6301 33.0772 10.5826 33.1687 10.5271C33.1188 10.4796 33.0938 10.4479 33.0605 10.432C28.7437 8.37195 24.4185 6.31979 20.0933 4.25971C19.6525 4.04578 19.2117 4.10124 18.7792 4.30725C17.8642 4.74304 16.9493 5.17882 16.0343 5.60669C15.5935 5.82854 15.136 6.0504 14.6453 6.2881Z"
+                fill="#E00C32" />
+            </svg>
+            <p class="stage__description">
+              Вы можете купить у нас товары не только те, которые мы заказываем под
+              собственными брендами на фабриках в Китае, Пакистане, Таджикистане
+              и России, но и товары практически всех российских производителей, по
+              их же ценам, благодаря нашим с ними партнёрским программам
+            </p>
+          </li>
+          <li class="stage__item">
+            <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M33.1467 3.90792C32.9824 4.29144 32.8363 4.68409 32.6538 5.05847C32.5898 5.18631 32.462 5.28675 32.3525 5.39633C23.3605 14.3907 14.3685 23.3759 5.38563 32.3702C4.86528 32.8907 4.28103 33.1555 3.54159 33.0185C2.09009 32.7446 1.46019 31.0644 2.37309 29.9048C2.45525 29.7952 2.55566 29.7039 2.64695 29.6034C11.639 20.6091 20.6218 11.6239 29.6138 2.62954C30.1433 2.09992 30.7458 1.83512 31.5035 1.99035C32.3981 2.17297 33.0463 2.9674 33.1467 3.90792Z"
+                fill="#E00C32" />
+              <path
+                d="M13.6021 6.7937C13.6112 10.291 10.3339 13.5874 6.83757 13.6057C3.33206 13.6239 0 10.3184 0 6.82109C0 3.31467 3.3138 0 6.81018 0C10.2974 0 13.593 3.2964 13.6021 6.7937ZM6.81018 3.89907C4.92049 3.89907 3.89805 4.90351 3.89805 6.78457C3.88892 8.68388 4.93875 9.73398 6.81931 9.72485C8.68161 9.71572 9.73144 8.65648 9.72231 6.7937C9.72231 4.93091 8.69074 3.89907 6.81018 3.89907Z"
+                fill="#E00C32" />
+              <path
+                d="M21.398 28.1881C21.398 24.6908 24.6844 21.4036 28.1808 21.3944C31.6863 21.3853 35.0092 24.6908 35.0001 28.1973C35.0001 31.6945 31.668 35.0092 28.1625 35.0001C24.6844 34.991 21.3888 31.6854 21.398 28.1881ZM31.102 28.1881C31.102 26.3071 30.0705 25.2752 28.199 25.2752C26.3367 25.2752 25.2778 26.3253 25.2778 28.179C25.2686 30.0692 26.3185 31.1101 28.2173 31.101C30.0887 31.101 31.102 30.0783 31.102 28.1881Z"
+                fill="#E00C32" />
+            </svg>
+            <p class="stage__description">
+              Гибкий подход к ценам. Всегда уступим, если найдете дешевле
+            </p>
+          </li>
+          <li class="stage__item">
+            <svg width="41" height="41" viewBox="0 0 41 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M26.4946 13.4586C26.6899 13.4586 26.8142 13.4586 26.9474 13.4586C29.6643 13.4586 32.3813 13.467 35.0982 13.4586C38.8806 13.4501 41.5176 16.4359 40.9139 19.9885C40.2124 24.15 39.5643 28.32 38.8895 32.4901C38.6941 33.6827 38.5343 34.8838 38.2946 36.068C37.8507 38.191 35.7108 40.1026 33.4556 40.4071C32.9318 40.4748 32.399 40.4748 31.8752 40.4748C25.3137 40.4833 18.7611 40.4748 12.1996 40.4748C10.1042 40.4748 8.00875 40.4748 5.90445 40.4748C2.71694 40.4748 0.00887888 37.8865 0 34.8415C0 30.7899 0 26.7383 0 22.6867C0 19.6248 2.70806 17.0449 5.93109 17.0449C7.18301 17.0449 8.44382 17.0365 9.69574 17.0534C10.0331 17.0619 10.1841 16.9519 10.3173 16.6643C12.5103 11.9361 14.7212 7.21625 16.9231 2.48798C17.6246 0.98238 18.2816 0.644042 19.9686 0.914712C23.6356 1.5068 26.4857 4.72101 26.4857 8.24818C26.4946 9.96524 26.4946 11.6823 26.4946 13.4586ZM13.265 36.8631C13.4693 36.8631 13.6202 36.8631 13.78 36.8631C20.0574 36.8631 26.3347 36.8631 32.6121 36.8631C32.7453 36.8631 32.8785 36.8631 33.0117 36.8546C33.8729 36.8039 34.3701 36.4063 34.5566 35.6028C34.6365 35.2475 34.6809 34.8838 34.743 34.5201C35.3468 30.7561 35.9594 26.9921 36.5632 23.2281C36.7941 21.8155 37.0072 20.3945 37.238 18.9735C37.3179 18.4829 37.1492 18.0769 36.8207 17.6878C36.4123 17.2141 35.9062 17.028 35.2669 17.028C31.7775 17.0365 28.297 17.0365 24.8076 17.028C23.458 17.028 22.7122 16.3091 22.7033 15.0065C22.7033 14.5413 22.7033 14.076 22.7033 13.6108C22.7033 11.6146 22.7388 9.61844 22.6767 7.62225C22.6323 6.2689 21.9486 5.24543 20.5901 4.69563C20.235 4.55184 20.0663 4.59413 19.8976 4.95784C17.7666 9.55923 15.6179 14.1522 13.4781 18.7451C13.3361 19.0411 13.265 19.3879 13.265 19.7178C13.2562 25.2581 13.2562 30.8068 13.2562 36.3471C13.265 36.5163 13.265 36.6685 13.265 36.8631ZM9.456 20.6567C8.15081 20.6567 6.89889 20.6482 5.64697 20.6567C4.38617 20.6652 3.80016 21.215 3.80016 22.4245C3.79128 26.6453 3.79128 30.8576 3.80016 35.0783C3.80016 36.3133 4.37729 36.8631 5.66473 36.8715C6.81898 36.88 7.96436 36.8715 9.11861 36.8715C9.23404 36.8715 9.34058 36.8546 9.456 36.8461C9.456 31.4412 9.456 26.0701 9.456 20.6567Z"
+                fill="#E00C32" />
+            </svg>
+            <p class="stage__description">
+              Автоматизация размещения и контроля доставки Ваших заказов
+            </p>
+          </li>
+          <li class="stage__item">
+            <svg width="46" height="37" viewBox="0 0 46 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M46 26.3118C45.5859 27.4233 44.7397 27.8401 43.5515 27.7706C42.8673 27.7272 42.1832 27.7619 41.436 27.7619C42.2282 29.3163 42.3992 30.8534 41.8141 32.4338C41.283 33.8492 40.3468 34.9781 39.0775 35.8378C36.755 37.4096 34.0634 37.3835 31.7589 35.777C30.4446 34.8652 29.5084 33.6756 29.0223 32.1733C28.5272 30.6623 28.7523 29.2121 29.4814 27.7793C25.1515 27.7793 20.8755 27.7793 16.5366 27.7793C17.3468 29.3511 17.5088 30.9402 16.8517 32.5727C16.2845 33.9708 15.3303 35.0823 14.0431 35.9247C11.7025 37.4356 8.99296 37.3488 6.72446 35.6989C5.45519 34.7784 4.54599 33.5974 4.08689 32.1212C3.62779 30.6449 3.82583 29.2121 4.57299 27.7619C4.1409 27.7619 3.77182 27.7706 3.40274 27.7619C2.79061 27.7533 2.16947 27.788 1.56634 27.7012C0.657142 27.5796 0.0360078 26.8328 0 25.9557C0 25.8428 0 25.7213 0 25.6084C0 17.793 0 9.97763 0 2.15357C0 0.720753 0.729157 0.0173686 2.18747 0.0173686C11.5945 0.0173686 21.0016 0.0260512 30.3996 0C31.7409 0 32.6411 0.842323 32.6141 2.24909C32.5691 4.55897 32.6051 6.86885 32.6051 9.24819C32.7761 9.24819 32.9382 9.24819 33.0912 9.24819C34.7566 9.24819 36.4129 9.25687 38.0783 9.23951C38.8524 9.23082 39.4466 9.51738 39.9777 10.0471C41.634 11.6796 43.3264 13.2774 44.9738 14.91C45.3699 15.3008 45.6579 15.7957 46 16.2473C46 19.6079 46 22.9598 46 26.3118ZM28.7342 3.7427C20.4164 3.7427 12.1526 3.7427 3.87084 3.7427C3.87084 10.5247 3.87084 17.2807 3.87084 24.0366C12.1706 24.0366 20.4434 24.0366 28.7342 24.0366C28.7342 17.2633 28.7342 10.516 28.7342 3.7427ZM42.1382 24.0366C42.1472 23.9498 42.1652 23.8803 42.1652 23.8108C42.1652 21.7788 42.1742 19.7382 42.1562 17.7062C42.1562 17.5238 42.0211 17.298 41.8771 17.1591C40.5358 15.8392 39.1675 14.5453 37.8262 13.2253C37.6192 13.0169 37.4031 12.9475 37.1151 12.9561C36.1609 12.9735 35.1977 12.9648 34.2434 12.9648C33.7123 12.9648 33.1812 12.9648 32.6411 12.9648C32.6411 16.6902 32.6411 20.3634 32.6411 24.0366C35.8188 24.0366 38.9695 24.0366 42.1382 24.0366ZM10.5413 27.7793C10.4693 27.7793 10.3883 27.7793 10.3162 27.7793C9.08297 27.788 8.20078 28.3611 7.8407 29.3597C7.3906 30.6102 7.72368 32.0864 8.60587 32.7551C8.7589 32.868 8.92994 32.9722 9.10098 33.0417C10.0462 33.4064 11.0094 33.4237 11.9456 33.033C12.2967 32.8853 12.6658 32.6248 12.8728 32.3209C13.593 31.2702 13.602 30.1239 13.0618 29.0211C12.5757 28.0311 11.6215 27.7619 10.5413 27.7793ZM35.4587 27.788C35.3417 27.788 35.2157 27.788 35.0986 27.788C33.8744 27.814 32.9742 28.5001 32.6861 29.6203C32.326 31.0531 32.7851 32.3991 33.8294 32.9548C33.9374 33.0069 34.0454 33.059 34.1534 33.0938C35.0356 33.389 35.9268 33.4237 36.782 33.0677C37.1781 32.9027 37.5922 32.6248 37.8172 32.2862C38.5194 31.2528 38.5194 30.1152 37.9793 29.0211C37.4932 28.0224 36.5299 27.7619 35.4587 27.788Z"
+                fill="#E00C32" />
+            </svg>
+            <p class="stage__description">
+              Бесплатная доставка товара до транспортной компании.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="popular-category">
+      <div class="container">
+        <h2 class="title-min">популярные категории</h2>
+        <ul class="popular-category__list">
+          <li class="popular-category__item">
+            <a class="popular-category__link" href="#">
+              <div class="popular-category__text">
+                <h3 class="popular-category__title">Футбол</h3>
+                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z"
+                    fill="#E00C32"></path>
+                </svg>
+              </div>
+              <img class="popular-category__img" src="./images/butci-img1.jpg" alt="футбол">
+            </a>
+          </li>
+          <li class="popular-category__item">
+            <a class="popular-category__link" href="#">
+              <div class="popular-category__text">
+                <h3 class="popular-category__title">Сапбординг</h3>
+                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z"
+                    fill="#E00C32"></path>
+                </svg>
+              </div>
+              <img class="popular-category__img" src="./images/novelty-img1.jpg" alt="футбол">
+            </a>
+          </li>
+          <li class="popular-category__item">
+            <a class="popular-category__link" href="#">
+              <div class="popular-category__text">
+                <h3 class="popular-category__title">Фитнесс</h3>
+                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z"
+                    fill="#E00C32"></path>
+                </svg>
+              </div>
+              <img class="popular-category__img" src="./images/fitness-img1.png" alt="футбол">
+            </a>
+          </li>
+          <li class="popular-category__item">
+            <a class="popular-category__link" href="#">
+              <div class="popular-category__text">
+                <h3 class="popular-category__title">Батуты</h3>
+                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z"
+                    fill="#E00C32"></path>
+                </svg>
+              </div>
+              <img class="popular-category__img" src="./images/batut-img1.jpg" alt="футбол">
+            </a>
+          </li>
+          <li class="popular-category__item">
+            <a class="popular-category__link" href="#">
+              <div class="popular-category__text">
+                <h3 class="popular-category__title">Самокаты</h3>
+                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z"
+                    fill="#E00C32"></path>
+                </svg>
+              </div>
+              <img class="popular-category__img" src="./images/samocat-img1.jpg" alt="футбол">
+            </a>
+          </li>
+          <li class="popular-category__item">
+            <a class="popular-category__link" href="#">
+              <div class="popular-category__text">
+                <h3 class="popular-category__title">Турники</h3>
+                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z"
+                    fill="#E00C32"></path>
+                </svg>
+              </div>
+              <img class="popular-category__img" src="./images/turnik-img1.jpg" alt="футбол">
+            </a>
+          </li>
+          <li class="popular-category__item">
+            <a class="popular-category__link" href="#">
+              <div class="popular-category__text">
+                <h3 class="popular-category__title">Бокс</h3>
+                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z"
+                    fill="#E00C32"></path>
+                </svg>
+              </div>
+              <img class="popular-category__img" src="./images/box-img1.jpg" alt="футбол">
+            </a>
+          </li>
+          <li class="popular-category__item">
+            <a class="popular-category__link" href="#">
+              <div class="popular-category__text">
+                <h3 class="popular-category__title">Скейт</h3>
+                <svg width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M22.7071 8.70711C23.0976 8.31658 23.0976 7.68342 22.7071 7.29289L16.3431 0.928932C15.9526 0.538408 15.3195 0.538408 14.9289 0.928932C14.5384 1.31946 14.5384 1.95262 14.9289 2.34315L20.5858 8L14.9289 13.6569C14.5384 14.0474 14.5384 14.6805 14.9289 15.0711C15.3195 15.4616 15.9526 15.4616 16.3431 15.0711L22.7071 8.70711ZM0 9H22V7H0V9Z"
+                    fill="#E00C32"></path>
+                </svg>
+              </div>
+              <img class="popular-category__img" src="./images/skate-img1.jpg" alt="футбол">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="novelties">
+      <div class="container">
+        <h2 class="title-min">Новинки</h2>
+        <!-- Slider main container -->
+        <div class="swiper novelties__swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="novelties-card">
+                <div class="novelties-card__imgbox">
+                  <img class="novelties-card__img" src="./images/novelty-img1.jpg" alt="dfdf">
+                </div>
+                <h3 class="novelties-card__title">Сапборд aquatic</h3>
+                <div class="novelties-card__prices">
+                  <div class="novelties-card__price">13 900 р</div>
+                  <a class="favorite" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="novelties-card__buttons">
+                  <button class="btn-reset btn btn--red">В корзину</button>
+                  <button class="btn-reset btn">Купить в 1 клик</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="novelties-card">
+                <div class="novelties-card__imgbox">
+                  <img class="novelties-card__img" src="./images/novelty-img2.jpg" alt="dfdf">
+                </div>
+                <h3 class="novelties-card__title">Кимоно</h3>
+                <div class="novelties-card__prices">
+                  <div class="novelties-card__price">13 900 р</div>
+                  <a class="favorite" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="novelties-card__buttons">
+                  <button class="btn-reset btn btn--red">В корзину</button>
+                  <button class="btn-reset btn">Купить в 1 клик</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="novelties-card">
+                <div class="novelties-card__imgbox">
+                  <img class="novelties-card__img" src="./images/novelty-img3.jpg" alt="dfdf">
+                </div>
+                <h3 class="novelties-card__title">Кимоно</h3>
+                <div class="novelties-card__prices">
+                  <div class="novelties-card__price">13 900 р</div>
+                  <a class="favorite" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="novelties-card__buttons">
+                  <button class="btn-reset btn btn--red">В корзину</button>
+                  <button class="btn-reset btn">Купить в 1 клик</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="novelties-card">
+                <div class="novelties-card__imgbox">
+                  <img class="novelties-card__img" src="./images/novelty-img4.jpg" alt="dfdf">
+                </div>
+                <h3 class="novelties-card__title">Борцовки</h3>
+                <div class="novelties-card__prices">
+                  <div class="novelties-card__price">13 900 р</div>
+                  <a class="favorite" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="novelties-card__buttons">
+                  <button class="btn-reset btn btn--red">В корзину</button>
+                  <button class="btn-reset btn">Купить в 1 клик</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="novelties-card">
+                <div class="novelties-card__imgbox">
+                  <img class="novelties-card__img" src="./images/samocat-img1.jpg" alt="dfdf">
+                </div>
+                <h3 class="novelties-card__title">Самокат midi</h3>
+                <div class="novelties-card__prices">
+                  <div class="novelties-card__price">13 900 р</div>
+                  <a class="favorite" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="novelties-card__buttons">
+                  <button class="btn-reset btn btn--red">В корзину</button>
+                  <button class="btn-reset btn">Купить в 1 клик</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="novelties-card">
+                <div class="novelties-card__imgbox">
+                  <img class="novelties-card__img" src="./images/skate-img1.jpg" alt="dfdf">
+                </div>
+                <h3 class="novelties-card__title">Скейт</h3>
+                <div class="novelties-card__prices">
+                  <div class="novelties-card__price">13 900 р</div>
+                  <a class="favorite" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="novelties-card__buttons">
+                  <button class="btn-reset btn btn--red">В корзину</button>
+                  <button class="btn-reset btn">Купить в 1 клик</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+              xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+              <path
+                d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z" />
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+              xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+              <path
+                d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="novelties">
+      <div class="container">
+        <h2 class="title-min">Популярные товары</h2>
+        <!-- Slider main container -->
+        <div class="swiper novelties__swiper2">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div class="novelties-card">
+                <div class="novelties-card__imgbox">
+                  <img class="novelties-card__img" src="./images/sap-img1.jpg" alt="dfdf">
+                </div>
+                <h3 class="novelties-card__title">Сапборд Tandem</h3>
+                <div class="novelties-card__prices">
+                  <div class="novelties-card__price">13 900 р</div>
+                  <a class="favorite" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="novelties-card__buttons">
+                  <button class="btn-reset btn btn--red">В корзину</button>
+                  <button class="btn-reset btn">Купить в 1 клик</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="novelties-card">
+                <div class="novelties-card__imgbox">
+                  <img class="novelties-card__img" src="./images/butlca-img1.jpg" alt="dfdf">
+                </div>
+                <h3 class="novelties-card__title">Бутылка спортивная</h3>
+                <div class="novelties-card__prices">
+                  <div class="novelties-card__price">13 900 р</div>
+                  <a class="favorite" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="novelties-card__buttons">
+                  <button class="btn-reset btn btn--red">В корзину</button>
+                  <button class="btn-reset btn">Купить в 1 клик</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="novelties-card">
+                <div class="novelties-card__imgbox">
+                  <img class="novelties-card__img" src="./images/novelty-img2.jpg" alt="dfdf">
+                </div>
+                <h3 class="novelties-card__title">Кимоно</h3>
+                <div class="novelties-card__prices">
+                  <div class="novelties-card__price">13 900 р</div>
+                  <a class="favorite" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="novelties-card__buttons">
+                  <button class="btn-reset btn btn--red">В корзину</button>
+                  <button class="btn-reset btn">Купить в 1 клик</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="novelties-card">
+                <div class="novelties-card__imgbox">
+                  <img class="novelties-card__img" src="./images/palci-img1.jpg" alt="dfdf">
+                </div>
+                <h3 class="novelties-card__title">Палки для трекинговой ходьбы</h3>
+                <div class="novelties-card__prices">
+                  <div class="novelties-card__price">13 900 р</div>
+                  <a class="favorite" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="novelties-card__buttons">
+                  <button class="btn-reset btn btn--red">В корзину</button>
+                  <button class="btn-reset btn">Купить в 1 клик</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="novelties-card">
+                <div class="novelties-card__imgbox">
+                  <img class="novelties-card__img" src="./images/samocat-img1.jpg" alt="dfdf">
+                </div>
+                <h3 class="novelties-card__title">Самокат midi</h3>
+                <div class="novelties-card__prices">
+                  <div class="novelties-card__price">13 900 р</div>
+                  <a class="favorite" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="novelties-card__buttons">
+                  <button class="btn-reset btn btn--red">В корзину</button>
+                  <button class="btn-reset btn">Купить в 1 клик</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="novelties-card">
+                <div class="novelties-card__imgbox">
+                  <img class="novelties-card__img" src="./images/skate-img1.jpg" alt="dfdf">
+                </div>
+                <h3 class="novelties-card__title">Скейт</h3>
+                <div class="novelties-card__prices">
+                  <div class="novelties-card__price">13 900 р</div>
+                  <a class="favorite" href="#">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M5 7.8C5 6.11984 5 5.27976 5.32698 4.63803C5.6146 4.07354 6.07354 3.6146 6.63803 3.32698C7.27976 3 8.11984 3 9.8 3H14.2C15.8802 3 16.7202 3 17.362 3.32698C17.9265 3.6146 18.3854 4.07354 18.673 4.63803C19 5.27976 19 6.11984 19 7.8V21L12 17L5 21V7.8Z"
+                        stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="novelties-card__buttons">
+                  <button class="btn-reset btn btn--red">В корзину</button>
+                  <button class="btn-reset btn">Купить в 1 клик</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev">
+            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+              xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+              <path
+                d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z" />
+            </svg>
+          </div>
+          <div class="swiper-button-next">
+            <svg version="1.1" width="20" height="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 129 129"
+              xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 129 129">
+              <path
+                d="m121.3,34.6c-1.6-1.6-4.2-1.6-5.8,0l-51,51.1-51.1-51.1c-1.6-1.6-4.2-1.6-5.8,0-1.6,1.6-1.6,4.2 0,5.8l53.9,53.9c0.8,0.8 1.8,1.2 2.9,1.2 1,0 2.1-0.4 2.9-1.2l53.9-53.9c1.7-1.6 1.7-4.2 0.1-5.8z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brands">
+      <div class="container">
+        <h2 class="title-min">Наши бренды</h2>
+        <ul class="brands__list">
+          <li class="brands__item">
+            <img src="./images/brand-img1.png" alt="df">
+          </li>
+          <li class="brands__item">
+            <img src="./images/brand-img2.png" alt="df">
+          </li>
+          <li class="brands__item">
+            <img src="./images/brand-img3.png" alt="df">
+          </li>
+          <li class="brands__item">
+            <img src="./images/brand-img4.png" alt="df">
+          </li>
+          <li class="brands__item">
+            <img src="./images/brand-img5.png" alt="df">
+          </li>
+
+        </ul>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__coll">
+        <a class="footer__phone" href="tel:+74957076266">+7 (495) 707 62 66</a>
+        <a class="footer__phone" href="tel:+74994810601">+7 (499) 481 06 01</a>
+        <a class="footer__phone" href="tel:+74994802296">+7 (499) 480 22 96</a>
+        <button class="btn-reset footer__button-call">Заказать звонок</button>
+        <a href="mailto:info@alcap.ru" class="footer__email">info@alcap.ru</a>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a href="#" class="">
+              <?xml version="1.0" ?><svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #4489c8;
+                    }
+
+                    .cls-2 {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <title />
+                <g data-name="32-vk" id="_32-vk">
+                  <rect class="cls-1" height="64" rx="11.2" ry="11.2" width="64" />
+                  <path class="cls-2"
+                    d="M9.62,19.77H17.3a.79.79,0,0,1,.74.51c.85,2.19,4.38,10.76,7.61,11.46,2.4,0,1.55-11.4-1.5-11.4-.8,0,1.42-1.42,1.57-1.48a16.38,16.38,0,0,1,8.66,0c1.53.64,1.79,2.43,1.83,3.95s-1.7,8,.59,8.7c3,.92,6.86-8.49,7.76-10.8a.79.79,0,0,1,.74-.5h8.55a.8.8,0,0,1,.74,1.11,74.74,74.74,0,0,1-6.31,11.52,1.59,1.59,0,0,0,.16,2C51,37.58,58,45.34,54,45.34H45.37a1.57,1.57,0,0,1-1.18-.53c-1.34-1.48-5.24-5.6-7-5.27-1.46.27-1.6,2.75-1.53,4.37a1.6,1.6,0,0,1-1.48,1.68c-1.53.09-3.62.13-3.81.12-6.1-.39-9.71-4.46-13.16-9A56.33,56.33,0,0,1,8.86,20.83.81.81,0,0,1,9.62,19.77Z" />
+                </g>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="">
+              <svg xmlns="http://www.w3.org/2000/svg" aria-label="Telegram" role="img" viewBox="0 0 512 512">
+                <rect width="512" height="512" rx="15%" fill="#37aee2" />
+                <path fill="#c8daea" d="M199 404c-11 0-10-4-13-14l-32-105 245-144" />
+                <path fill="#a9c9dd" d="M199 404c7 0 11-4 16-8l45-43-56-34" />
+                <path fill="#f6fbfe"
+                  d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4" />
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="#" class="">
+              <img src="./images/ok.png" alt="ok">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__adress">
+        <h4 class="footer__title-min footer__title-min--adress">Наш адресс</h4>
+        <p class="footer__adress">127540, г. Москва,
+          ул. Дубнинская,
+          д. 10, корп. 1</p>
+      </div>
+      <div class="footer__time">
+        <h4 class="footer__title-min footer__title-min--clock">Часы работы</h4>
+        <p class="footer__adress">Пн - Пт с 9.00 -18.00</p>
+        <button class="btn-reset footer__btn">Сотрудничество</button>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
+</body>
+
+</html>
