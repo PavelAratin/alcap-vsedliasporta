@@ -1,6 +1,9 @@
 .swiper {
   width: 100%;
 }
+.swiper-slide {
+  height: auto;
+}
 .swiper-button-next::after,
 .swiper-button-prev::after {
   display: none;
@@ -24,7 +27,7 @@
 
 .swiper-slide__one {
   height: 500px;
-  background-image: url('../images/swiper-img1.png');
+  background-image: url('../images/swiper-img2.png');
   background-position: center center;
   background-size: cover;
 }
